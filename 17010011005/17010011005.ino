@@ -60,8 +60,8 @@ volatile float dht11Value = 0;       // (DHT11)
 volatile float humidityValue = 0;    // (DHT11) Humidity    -> %
 volatile float temperatureValue = 0; // (DHT11) Temperature -> Celcius
                                           
-String networkName = "TurkTelekom_TB74C";
-String networkPassword = "WALKINGDEAD1234567811";
+String networkName = "TurkTelekom_TB74B";
+String networkPassword = "*****************";  // Your Network Password
 String ip = "184.106.153.149";      //Thingspeak IP
 String conditionName;
     
