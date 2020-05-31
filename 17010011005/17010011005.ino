@@ -489,7 +489,7 @@ void loop()
       Serial.println("AT+CIPSTART Error");
 
     
-    String data = "GET https://api.thingspeak.com/update?api_key=WBGXCA1I45XM07K6"; 
+    String data = "GET https://api.thingspeak.com/update?api_key=your_api_key"; 
     data += "&field3=";
     data += String(humidityValue);
     data += "&field4=";
