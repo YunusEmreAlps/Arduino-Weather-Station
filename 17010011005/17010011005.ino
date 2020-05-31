@@ -99,7 +99,7 @@ void setup()
   pinMode(bluePin, OUTPUT);
   pinMode(backlightPin, OUTPUT);       // Nokia 5110 LCD Back Light
 
-  // Red (Dangerous)
+  // No Connection
   analogWrite(redPin, 0);
   analogWrite(greenPin, 255);
   analogWrite(bluePin, 255);
@@ -124,11 +124,12 @@ void setup()
   while(!Serial1.find("OK"));                                     
   Serial.println(" - Connection success");
 
-   // Green
+   // Internet Connection Success
    analogWrite(redPin, 255);
    analogWrite(greenPin, 0);
    analogWrite(bluePin, 255); 
    delay (3000);
+  // LED OFF
    analogWrite(redPin, 255);
    analogWrite(greenPin, 255);
    analogWrite(bluePin, 255);    
@@ -159,6 +160,7 @@ void setup()
   TIMSK1 |= (1 << OCIE1A);
   sei();
 
+  // Last Measurement
    if(systemState == false)
   {   
     // Last Measurement Date and Time 
