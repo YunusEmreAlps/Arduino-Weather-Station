@@ -13,3 +13,26 @@
 * 1 x Push Button [Buy](https://www.robotistan.com/4-pinli-push-buton-siyah-6x6x5mm?#ins_eureka=eyJjYW1wYWlnbklkIjowLCJrZXl3b3JkIjoiUHVzaCBCdXR0b24iLCJvcmRlciI6MSwicHJvZHVjdElkIjoiMTU3MDIiLCJzZWFyY2hJZCI6IjE1OTA5MjYxNzhKWWZ3cnRPdUlGIn0%3D)
 * 4 x 330 Ohm Resistor
 * 2 x 10K Resistor
+
+## Fritzing 
+![Fritzing](https://github.com/YunusEmreAlps/Arduino-Weather-Station/blob/master/Project_fritzing.png)
+
+## Real
+![Real](https://github.com/YunusEmreAlps/Arduino-Weather-Station/blob/master/Project.jpg)
+
+
+### !!! EEPROMString Library 
+if you want to save String to Arduino memory. EEPROMString Library for you.
+
+### EEPROMString Declaration             
+EEPROMString objectName (Address);
+
+### EEPROMString reading
+Serial.println(objectName.reading());
+
+### EEPROMString writing
+objectName.writing(String);
+
+
+
+
